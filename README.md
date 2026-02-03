@@ -69,11 +69,13 @@ tasks:
 ## Backfill Strategy for 2021
 
 To ingest data for 2021, the flow can be executed in the following ways:
+
 	•	Scheduled backfill using Kestra’s backfill functionality
 (from 2021-01-01 to 2021-07-31)
 	•	Or by using a ForEach task to iterate over:
 	•	Taxi types: yellow, green
 	•	Months: 01 to 07
+	
 
 This allows processing all available NYC Taxi datasets for 2021 in a reproducible
 and automated manner.
