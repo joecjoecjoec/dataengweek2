@@ -86,5 +86,5 @@ and automated manner.
 homework instruction
 	•	The emphasis of this homework is on workflow orchestration concepts, including
 parameterization, scheduling, and backfilling, rather than on a specific local
-execution environment.
+execution environment
 
