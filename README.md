@@ -68,25 +68,30 @@ tasks:
 ```
 ## Backfill Strategy for 2021
 
-To ingest data for 2021, the flow can be executed in the following ways:
+To ingest data for **2021**, the flow can be executed in the following ways:
 
-	•	Scheduled backfill using Kestra’s backfill functionality
-(from 2021-01-01 to 2021-07-31)
-	•	Or by using a ForEach task to iterate over:
-	•	Taxi types: yellow, green
-	•	Months: 01 to 07
-	
+### Option 1: Scheduled Backfill
 
-This allows processing all available NYC Taxi datasets for 2021 in a reproducible
-and automated manner.
+- Use Kestra’s **backfill functionality**
+- Select the following time range:
+  - Start date: `2021-01-01`
+  - End date: `2021-07-31`
 
-⸻
+### Option 2: Iteration with ForEach
+
+- Use a `ForEach` task to iterate over:
+  - Taxi types: `yellow`, `green`
+  - Months: `01` to `07`
+
+This approach allows processing all available NYC Taxi datasets for 2021 in a
+**reproducible and automated manner**.
 
 ## Notes
-	•	The workflow is designed to run on **Kestra deployed via Docker**
-	•	The YAML definition is included directly in this README in accordance with the
-homework instruction
-	•	The emphasis of this homework is on workflow orchestration concepts, including
-parameterization, scheduling, and backfilling, rather than on a specific local
-execution environment
+
+- The workflow is designed to run on **Kestra deployed via Docker**
+- The YAML flow definition is included directly in this README in accordance with the
+  homework instructions
+- The emphasis of this homework is on **workflow orchestration concepts**, including
+  parameterization, scheduling, and backfilling, rather than on a specific local
+  execution environment
 
